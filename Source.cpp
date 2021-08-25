@@ -6,6 +6,7 @@
 
 //
 bool ShowWindows = false;
+HWND WindowName;
 
 // 
 static BOOL CALLBACK windcallback(HWND hWnd, LPARAM lparam) {
@@ -57,12 +58,10 @@ void GetKeyPress()
     // Constant loop
     while (true)
     {
-        // Get input
-        if (GetKeyState(VK_RSHIFT) & 0x8000) {
-            // Toggle Show Window
+        // Get input and make sure if focused
+        if (GetKeyState(VK_RSHIFT) & 0x8000 && GetForegroundWindow() == WindowName) {
             ShowWindows = !ShowWindows;
 
-            // Output
             std::cout << (ShowWindows ? "Shown" : "Hidden") << std::endl;
         }
 
@@ -74,6 +73,7 @@ void GetKeyPress()
 // Main
 int main(int argc, char** argv) {
     //
+    WindowName = GetForegroundWindow();
     std::cout << "All roblox clients that are open/opened will now be hidden. Press Right Shift to show all ROBLOX windows" << std::endl;
 
     //
