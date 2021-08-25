@@ -1,4 +1,5 @@
-**PLEASE BE CAREFUL OF THE BUILD RELEASE FROM THE ORIGINAL, IT MAY CONTAIN MALWARE**
+# Community Warning
+Please do not use toastering's own compilation as whenever I compiled it myself, the file size was significantly lower and had less detections on VirusTotal. **THEY MAY HAVE ADDED MALWARE**
 
 # Basic Pros
 -Physics are still calculated normally using your fps, usually ~60 fps unless you unlock your fps.\
