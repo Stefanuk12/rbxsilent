@@ -17,4 +17,6 @@ You may need to install the latest [vc-redist](https://learn.microsoft.com/en-us
 # Basic Cons
 -No anti-afk is implemented, user will timeout from inactivity, an exploit and a script with antiafk for example infinite yield is required.\
 \
--Unintentionally has the ability to hide the process from task manager, seems to be rare.\
+-Unintentionally has the ability to hide the process from task manager, seems to be rare.
+
+-In order to unhide the game client window(s) you have to use something like process hacker to edit window visibilty or manually search and restart/terminate the game client/s.
